@@ -23,6 +23,13 @@ And I retrieve the wine and cheese products string pattern to recognize them usi
 ### Quantity of Products Sold
 `quantitySoldDiscount` – if chekcs the number of quantities sold of each product and calculate the discount according to the quantity range it falls into as mentioned in the problem statement.
 
+### Sales made through the App with specified quantity range Qualifying Rule
+* `quantityQualifier` - it cheks if the quantity sold in the range of multiple of 5, and for each range it returns specfic discount value
+* `salesApp` it firstly check if the channel in `App`, and if it is, call `quantityQualifier` and the return from it will be the return value of salesApp function
+
+### Payment method Qualifying Rule
+`visaPaymentMethod` - it takes the payment method as input and checks if it `Visa` it will return 0.05, otherwise return 0.0
+
 ## Database Connection
 I calculated the final discount by taking the average of the two maximum discount values of each product, then I created a table RetailSore that holds the following columns:
 *	SOLD_DATE
