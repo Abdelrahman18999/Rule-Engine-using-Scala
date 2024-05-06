@@ -3,6 +3,7 @@
 A huge retail store wants a rule engine that qualifies orders’ transactions to discounts based
 on a set of qualifying rules. And automatically calculates the proper discount based on some
 calculation rules as follows:
+
 ![Rules](rules.png)
 I read this data using pandas to do simple exploratory data analysis (EDA) on it, to see the data distributions and unique values for each column and so on.
 And I retrieve the wine and cheese products string pattern to recognize them using regex in my code logic in Scala.
@@ -33,10 +34,12 @@ I calculated the final discount by taking the average of the two maximum discoun
 *	PAYMENT_METHOD
 *	FINAL_PRICE
 The connection that I used is Oracle connection using JDBC oracle drive, then I insert into this table the values of source file csv file with the FINAL_PRICE column that was calculated through the project code.
+
 ![table](table.png)
 
 ## Logging the Engine Rule Interactions
 Finally, I created a function that write into ‘rules_engine.log’ file. It writes the INFO operations happened in the Engine Rule.
+
 ![logging](log.png)
 
 
