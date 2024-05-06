@@ -33,7 +33,7 @@ I calculated the final discount by taking the average of the two maximum discoun
 *	PAYMENT_METHOD
 *	FINAL_PRICE
 The connection that I used is Oracle connection using JDBC oracle drive, then I insert into this table the values of source file csv file with the FINAL_PRICE column that was calculated through the project code.
-![table] (table.png)
+![table](table.png)
 
 ## Logging the Engine Rule Interactions
 Finally, I created a function that write into ‘rules_engine.log’ file. It writes the INFO operations happened in the Engine Rule.
